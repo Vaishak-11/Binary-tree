@@ -38,14 +38,14 @@ void printtree(struct node *root){
 }
 
 int main() {
-    int i,count,a[100],i_num,option,print_opt,d_num;
+    int i,count,num[100],i_num,option,print_opt,d_num;
     struct node *root = NULL;
     printf("enter the element count: ");
     scanf("%d",&count);
     printf("\nenter the elements: ");
     for(i=0;i<count;i++){
-        scanf("%d",&a[i]);
-        root = insert(root,a[i]);
+        scanf("%d",&num[i]);
+        root = insert(root,num[i]);
     }
     printf("1.Insert   2.DFS   3.Height   4.Diameter   5.BFS   6.Delete   7.Print\n");
     while(1){
